@@ -14,9 +14,9 @@
 https://github.com/paulvarkey758/IoT-React-Js-Frontend
 
 <h2>Backend</h2>
-<p>Backend is developed by using Python Django Rest framework and it developed as an api with end pionts to read and write data.</p>
+<p>Backend is developed by using <b>Python Django Rest framework</b> and it developed as an api with end pionts to read and write data.</p>
 <p>Backend is given as another repository  and find it in the given link</p>
-https://github.com/paulvarkey758/IoT-Django-Backend
+https://github.com/paulvarkey758/iot-django-backend
 
 <h2>Embedded systems</h2>
-<p>Here the <b>ESP32 NodeMcu</b> using as the brain of the system in which has inbuilt <b>WiFi</b> connectivity. The esp module is programmed by using <b>Micropython</b>. The micropython program access the backend/Api and fetch the data. according to the data the program controls devices connected to the esp modules through gpio pins. </p>
+<p>Here the <b>ESP32 NodeMcu</b> using as the brain of the system in which has inbuilt <b>WiFi</b> connectivity. The esp module is programmed by using <b>Micropython</b>. The micropython program access the backend/Api and fetch the data. according to the data the program controls devices connected to the esp modules through gpio pins. Also there is temperature and humidity sensor to sense the data and it will be updated on api. user can integrate more sensors with the system </p>
