@@ -24,14 +24,18 @@ def put_data(id,name,t):
     resp=urequests.put(f'https://paulkvarkey.pythonanywhere.com/api/sensor-write/{id}/',json=data).json()
 
 def sense_data():
-    dht_sensor.measure()
-    temp=dht_sensor.temperature()
-    hum=dht_sensor.humidity()
-    print("Temperature: ",temp)
-    print("Humidity: ",hum)
-        
-    put_data(2,"temperature",temp) #2 is the field id of temperature
-    put_data(3,"humidity",hum) #3 is the field is of humidity
+    try:
+        dht_sensor.measure()
+        temp=dht_sensor.temperature()
+        hum=dht_sensor.humidity()
+        print("Temperature: ",temp)
+        print("Humidity: ",hum)
+    except:
+        temp=0
+        hum=0
+    finally:    
+        put_data(2,"temperature",temp) #2 is the field id of temperature
+        put_data(3,"humidity",hum) #3 is the field is of humidity
     
     
     
