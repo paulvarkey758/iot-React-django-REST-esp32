@@ -20,3 +20,6 @@ https://github.com/paulvarkey758/iot-django-backend
 
 <h2>Embedded systems</h2>
 <p>Here the <b>ESP32 NodeMcu</b> using as the brain of the system in which has inbuilt <b>WiFi</b> connectivity. The esp module is programmed by using <b>Micropython</b>. The micropython program access the backend/Api and fetch the data. according to the data the program controls devices connected to the esp modules through gpio pins. Also there is temperature and humidity sensor to sense the data and it will be updated on api. user can integrate more sensors with the system </p>
+
+<h3>Preview of the app</h3>
+<img src="images/preview.png" width="400">
